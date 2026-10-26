@@ -1,0 +1,136 @@
+{
+  "packId": "pack.john01",
+  "schemaVersion": 1,
+  "_note": "SPIKE SAMPLE. Coordinates are approximate and must be replaced by OpenBible.info / Pleiades imports before any release. All narration is draft and unreviewed. Scripture is referenced by VerseRange only; text comes from the bundled BSB.",
+  "locations": [
+    {
+      "id": "loc.bethany-beyond-jordan",
+      "names": { "bsb": "Bethany beyond the Jordan", "ancient": "Bethany (Bethabara in some manuscripts)", "modern": "Al-Maghtas (proposed)" },
+      "candidates": [
+        { "lat": 31.8375, "lon": 35.5503, "label": "Al-Maghtas / Wadi el-Kharrar, east bank near Jericho", "confidence": "debated", "source": "Plan Page default; approximate coordinate, verify against OpenBible.info", "isDefault": true },
+        { "lat": 32.85, "lon": 36.05, "label": "Batanea region (northern proposal), rough centroid", "confidence": "uncertain", "source": "Plan Page alternative; rough coordinate, verify", "isDefault": false }
+      ],
+      "gazetteerIds": {},
+      "region": "perea",
+      "diorama": "assets/dioramas/jordan_crossing.glb",
+      "terrainBounds": [35.52, 31.81, 35.58, 31.86]
+    },
+    {
+      "id": "loc.jerusalem",
+      "names": { "bsb": "Jerusalem", "ancient": "Hierosolyma", "modern": "Jerusalem" },
+      "candidates": [
+        { "lat": 31.7781, "lon": 35.2354, "label": "Temple Mount", "confidence": "high", "source": "Approximate coordinate, verify", "isDefault": true }
+      ],
+      "gazetteerIds": {},
+      "region": "judea"
+    },
+    {
+      "id": "loc.bethsaida",
+      "names": { "bsb": "Bethsaida", "modern": "et-Tell or el-Araj (proposed)" },
+      "candidates": [
+        { "lat": 32.9103, "lon": 35.6306, "label": "et-Tell", "confidence": "debated", "source": "Approximate coordinate, verify", "isDefault": true },
+        { "lat": 32.8936, "lon": 35.6156, "label": "el-Araj", "confidence": "debated", "source": "Approximate coordinate, verify", "isDefault": false }
+      ],
+      "gazetteerIds": {},
+      "region": "galilee"
+    },
+    {
+      "id": "loc.nazareth",
+      "names": { "bsb": "Nazareth", "modern": "Nazareth" },
+      "candidates": [
+        { "lat": 32.7019, "lon": 35.2978, "label": "Nazareth (old city)", "confidence": "high", "source": "Approximate coordinate, verify", "isDefault": true }
+      ],
+      "gazetteerIds": {},
+      "region": "galilee"
+    },
+    {
+      "id": "loc.cana",
+      "names": { "bsb": "Cana in Galilee", "modern": "Khirbet Qana or Kafr Kanna (proposed)" },
+      "candidates": [
+        { "lat": 32.8185, "lon": 35.2837, "label": "Khirbet Qana", "confidence": "debated", "source": "Plan Page default; approximate coordinate, verify", "isDefault": true },
+        { "lat": 32.7466, "lon": 35.3417, "label": "Kafr Kanna", "confidence": "debated", "source": "Plan Page alternative; approximate coordinate, verify", "isDefault": false }
+      ],
+      "gazetteerIds": {},
+      "region": "galilee"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scn.jn01.testimony",
+      "title": "The Testimony of John",
+      "timelineOrder": 1000,
+      "johnRef": [{ "book": "John", "chapter": 1, "verseStart": 19, "verseEnd": 28 }],
+      "parallels": [],
+      "type": "witness",
+      "locationId": "loc.bethany-beyond-jordan",
+      "beats": [
+        { "kind": "camera", "shot": "establishing.jordan-east-bank" },
+        { "kind": "narration", "text": "DRAFT: The Jordan runs low between banks of pale marl, and a crowd has gathered at the crossing.", "author": "spike", "reviewed": false },
+        { "kind": "scripture", "ref": { "book": "John", "chapter": 1, "verseStart": 19, "verseEnd": 23 } },
+        { "kind": "scripture", "ref": { "book": "John", "chapter": 1, "verseStart": 24, "verseEnd": 28 } },
+        { "kind": "interaction", "interaction": "look", "prompt": "Look across the river.", "targets": ["river", "crowd"] }
+      ],
+      "harmonyNoteIds": ["hn.bethany-beyond-jordan"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "scn.jn01.lamb-of-god",
+      "title": "The Lamb of God",
+      "timelineOrder": 1010,
+      "johnRef": [{ "book": "John", "chapter": 1, "verseStart": 29, "verseEnd": 34 }],
+      "parallels": [
+        { "book": "Matthew", "chapter": 3, "verseStart": 13, "verseEnd": 17 },
+        { "book": "Mark", "chapter": 1, "verseStart": 9, "verseEnd": 11 },
+        { "book": "Luke", "chapter": 3, "verseStart": 21, "verseEnd": 22 }
+      ],
+      "type": "witness",
+      "locationId": "loc.bethany-beyond-jordan",
+      "beats": [
+        { "kind": "camera", "shot": "crowd.facing-path" },
+        { "kind": "scripture", "ref": { "book": "John", "chapter": 1, "verseStart": 29, "verseEnd": 31 } },
+        { "kind": "scripture", "ref": { "book": "John", "chapter": 1, "verseStart": 32, "verseEnd": 34 } },
+        { "kind": "interaction", "interaction": "journal", "prompt": "Record this testimony in your journal.", "targets": ["John 1:29"] }
+      ],
+      "harmonyNoteIds": ["hn.bethany-beyond-jordan"],
+      "reviewStatus": "draft"
+    },
+    {
+      "id": "scn.jn01.first-disciples",
+      "title": "The First Disciples",
+      "timelineOrder": 1020,
+      "johnRef": [{ "book": "John", "chapter": 1, "verseStart": 35, "verseEnd": 51 }],
+      "parallels": [],
+      "type": "witness",
+      "locationId": "loc.bethany-beyond-jordan",
+      "beats": [
+        { "kind": "scripture", "ref": { "book": "John", "chapter": 1, "verseStart": 35, "verseEnd": 42 } },
+        { "kind": "narration", "text": "DRAFT: The next morning the road north toward Galilee is already busy.", "author": "spike", "reviewed": false },
+        { "kind": "scripture", "ref": { "book": "John", "chapter": 1, "verseStart": 43, "verseEnd": 51 } },
+        { "kind": "interaction", "interaction": "walk", "prompt": "Follow the road north.", "targets": ["loc.cana"] }
+      ],
+      "harmonyNoteIds": ["hn.bethany-beyond-jordan"],
+      "reviewStatus": "draft"
+    }
+  ],
+  "timeline": [
+    { "id": "tl.era.prologue", "title": "The Word before all things (prologue)", "order": 0, "kind": "era", "dateLabel": "Eternity; framed as prologue", "ref": [{ "book": "John", "chapter": 1, "verseStart": 1, "verseEnd": 18 }], "sceneIds": [] },
+    { "id": "tl.era.early-ministry", "title": "Early ministry", "order": 800, "kind": "era", "dateLabel": "c. AD 29-30", "dateRange": { "from": "0029-09-01", "to": "0030-04-30" }, "ref": [], "sceneIds": [] },
+    { "id": "tl.marker.baptism-temptation", "title": "Baptism and temptation (Synoptic marker)", "order": 900, "kind": "synopticMarker", "dateLabel": "c. autumn AD 29", "dateRange": { "from": "0029-09-01", "to": "0029-11-30" }, "ref": [{ "book": "Matthew", "chapter": 3, "verseStart": 13, "verseEnd": 17 }, { "book": "Matthew", "chapter": 4, "verseStart": 1, "verseEnd": 11 }], "sceneIds": [] },
+    { "id": "tl.jn01.witness-week", "title": "John's testimony and the first disciples", "order": 1000, "kind": "playableScene", "dateLabel": "c. winter AD 29/30", "dateRange": { "from": "0029-12-01", "to": "0030-01-31" }, "ref": [{ "book": "John", "chapter": 1, "verseStart": 19, "verseEnd": 51 }], "sceneIds": ["scn.jn01.testimony", "scn.jn01.lamb-of-god", "scn.jn01.first-disciples"] },
+    { "id": "tl.jn02.cana", "title": "Wedding at Cana (teaser)", "order": 2000, "kind": "playableScene", "dateLabel": "c. early AD 30", "dateRange": { "from": "0030-02-01", "to": "0030-02-28" }, "ref": [{ "book": "John", "chapter": 2, "verseStart": 1, "verseEnd": 11 }], "sceneIds": [] },
+    { "id": "tl.feast.passover-1", "title": "First Passover", "order": 3000, "kind": "feast", "dateLabel": "Passover AD 30", "dateRange": { "from": "0030-04-01", "to": "0030-04-15" }, "ref": [{ "book": "John", "chapter": 2, "verseStart": 13, "verseEnd": 13 }], "sceneIds": [] }
+  ],
+  "harmonyNotes": [
+    {
+      "id": "hn.bethany-beyond-jordan",
+      "question": "Where was Bethany beyond the Jordan (John 1:28)?",
+      "views": [
+        { "label": "Al-Maghtas / Wadi el-Kharrar, east bank near Jericho", "holders": ["Common identification; to cite"], "refs": ["John 1:28", "John 10:40"] },
+        { "label": "Batanea in the north", "holders": ["Northern proposal; to cite"], "refs": ["John 1:28"] }
+      ],
+      "defaultView": "Al-Maghtas / Wadi el-Kharrar, east bank near Jericho",
+      "basis": "Plan Page default; sources to be cited before review",
+      "reviewedBy": []
+    }
+  ]
+}

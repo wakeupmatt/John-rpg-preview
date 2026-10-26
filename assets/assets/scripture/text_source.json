@@ -1,0 +1,11 @@
+{
+  "translationId": "BSB",
+  "printing": "bereanbible.com/bsb.txt (downloaded 2026-10-26 UTC; header names no printing number)",
+  "sourceUrl": "https://bereanbible.com/bsb.txt",
+  "sourceFileSha256": "2ac3af1de52d4e68261cba91d85c320b7eadc6560e830d99e591767b8ff5ca96",
+  "bundledFile": "assets/scripture/bsb_john1.tsv",
+  "bundledFileSha256": "15459ab86888e321e5b61a45af8136a89f3a704aab2574d47316d2114b5e1e3d",
+  "scope": "John 1",
+  "verseCount": 51,
+  "notice": "\ufeffThe Holy Bible, Berean Standard Bible, BSB is produced in cooperation with Bible Hub, Discovery Bible, unfoldingWord, Bible Aquifer, OpenBible.com, and the Berean Bible Translation Committee. This text of God's Word has been dedicated to the public domain. Free resources and databases are available at BereanBible.com."
+}
